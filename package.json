@@ -1,0 +1,22 @@
+{
+    "name": "sweet-taste",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SinaMAmini/sweet-taste.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SinaMAmini/sweet-taste/issues"
+    },
+    "homepage": "https://github.com/SinaMAmini/sweet-taste#readme",
+    "dependencies": {
+        "prettier": "^2.5.1"
+    },
+    "devDependencies": {
+        "concurrently": "^6.5.1"
+    }
+}

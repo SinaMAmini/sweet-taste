@@ -1,0 +1,21 @@
+.preloader {
+    height: 100vh;
+    margin-top: 200px;
+}
+.error{
+    width: 70%;
+    height: 70%;
+    margin-top: 150px;
+    overflow-y: hidden;
+     
+}
+.bigeror{
+    position: relative;
+    display: flex;
+    max-height: 700px;
+    overflow-y: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+ 
