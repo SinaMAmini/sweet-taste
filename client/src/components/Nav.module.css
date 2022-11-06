@@ -76,6 +76,7 @@ a {
     position: relative;
     top: 30%;
     right: 4%;
+    color: #756767;
 }
 
 .loginregister a {
@@ -113,4 +114,5 @@ a {
     position: relative;
     top: -10%;
     left: 1%;
+    color: #363537;
 }
