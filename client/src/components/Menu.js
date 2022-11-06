@@ -11,22 +11,22 @@ const Menu = () => {
 
     const [foodBlog, setFoodBlog] = useState([]);
     useEffect(async () => {
-        const response = await Axios.get('http://localhost:3001/foods/all', {});
+        const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/all', {});
         setFoodBlog(response.data);
     }, []);
 
     async function showFoods(_type) {
         if (_type === 'همه') {
-            const response = await Axios.get('http://localhost:3001/foods/all', {});
+            const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/all', {});
             setFoodBlog(response.data);
         } else if (_type === 'ایرانی') {
-            const response = await Axios.get('http://localhost:3001/foods/iranian', {});
+            const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/iranian', {});
             setFoodBlog(response.data);
         } else if (_type === 'فست فود') {
-            const response = await Axios.get('http://localhost:3001/foods/fastfood', {});
+            const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/fastfood', {});
             setFoodBlog(response.data);
         } else if (_type === 'کیک و دسر') {
-            const response = await Axios.get('http://localhost:3001/foods/cake', {});
+            const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/cake', {});
             setFoodBlog(response.data);
         }
     }

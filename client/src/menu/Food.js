@@ -9,9 +9,9 @@ const Food = ({ food }) => {
     const [ingredients, setIngredients] = useState([]);
 
     useEffect(async () => {
-        const response = await Axios.get(`http://localhost:3001/food/${food.food_id}/ingredients`, {});
+        const response = await Axios.get(`http://sina-amini.ir/app/sweet-taste/food/${food.food_id}/ingredients`, {});
         setIngredients(response.data);
-        const response2 = await Axios.get(`http://localhost:3001/food/${food.food_id}/steps`, {});
+        const response2 = await Axios.get(`http://sina-amini.ir/app/sweet-taste/food/${food.food_id}/steps`, {});
         setSteps(response2.data);
     }, []);
 

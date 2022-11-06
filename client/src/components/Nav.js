@@ -10,7 +10,7 @@ const Nav = () => {
     const [name, setName] = useState(null);
 
     useEffect(async () => {
-        const response = await Axios.post('http://localhost:3001/verify-token', {
+        const response = await Axios.post('http://sina-amini.ir/app/sweet-taste/verify-token', {
             token: localStorage.getItem('token'),
         });
 

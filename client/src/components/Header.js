@@ -9,7 +9,7 @@ const Header = () => {
     let data = [];
 
     useEffect(async () => {
-        const response = await Axios.get('http://localhost:3001/food_name', {});
+        const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/food_name', {});
         for (let i = 0; i < response.data.length; i++) {
             data[i] = response.data[i].food_name;
         }

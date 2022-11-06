@@ -18,7 +18,7 @@ import Toggle from './Toggler';
 function App() {
     const [foodBlog, setFoodBlog] = useState([]);
     useEffect(async () => {
-        const response = await Axios.get('http://localhost:3001/foods/all', {});
+        const response = await Axios.get('http://sina-amini.ir/app/sweet-taste/foods/all', {});
         setFoodBlog(response.data);
     }, []);
 

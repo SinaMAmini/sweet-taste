@@ -39,7 +39,7 @@ const Signup = () => {
     const submitHandler = async (event) => {
         event.preventDefault();
         if (!Object.keys(errors).length) {
-            const response = await Axios.post('http://localhost:3001/create', {
+            const response = await Axios.post('http://sina-amini.ir/app/sweet-taste/create', {
                 name: data.name,
                 email: data.email,
                 password: data.password,

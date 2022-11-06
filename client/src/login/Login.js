@@ -33,7 +33,7 @@ const Login = () => {
         event.preventDefault();
 
         if (!Object.keys(errors).length) {
-            const response = await Axios.post('http://localhost:3001/login', {
+            const response = await Axios.post('http://sina-amini.ir/app/sweet-taste/login', {
                 name: data.name,
                 password: data.password,
             });

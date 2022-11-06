@@ -9,7 +9,7 @@ const ContactUs = () => {
     const [message, setMessage] = useState();
 
     const sendHandler = async (e) => {
-        const response = await Axios.post('http://localhost:3001/contact', {
+        const response = await Axios.post('http://sina-amini.ir/app/sweet-taste/contact', {
             token: localStorage.getItem('token'),
             message: message,
         });
